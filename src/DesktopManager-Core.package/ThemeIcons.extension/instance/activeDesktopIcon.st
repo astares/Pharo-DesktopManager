@@ -2,4 +2,4 @@
 activeDesktopIcon
 	^ icons
 			at: #'activeDesktopIcon'
-			ifAbsentPut: [ Form fromBinaryStream: (Base64MimeConverter mimeDecodeToBytes: self activeDesktopIconContents readStream) ].
+			ifAbsentPut: [ Form fromBinaryStream: self activeDesktopIconContents base64Decoded readStream ].
