@@ -1,1 +1,0 @@
-Baseline for Pharo Desktop Manager (https://github.com/astares/Pharo-DesktopManager)
