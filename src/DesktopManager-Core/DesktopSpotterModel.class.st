@@ -4,7 +4,7 @@ A spotter model for the desktops
 Class {
 	#name : #DesktopSpotterModel,
 	#superclass : #Object,
-	#category : 'DesktopManager-Core-Spotter'
+	#category : #'DesktopManager-Core-Spotter'
 }
 
 { #category : #'instance creation' }

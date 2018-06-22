@@ -8,7 +8,7 @@ Class {
 		'world',
 		'name'
 	],
-	#category : 'DesktopManager-Core-Base'
+	#category : #'DesktopManager-Core-Base'
 }
 
 { #category : #'instance creation' }
@@ -46,7 +46,7 @@ Desktop >> gtInspectorMorphIn: composite [
 { #category : #accessing }
 Desktop >> icon [
 	^ self isActive
-		ifTrue: [ self iconNamed: #activeDesktopIcon ]
+		ifTrue: [ Smalltalk ui icons activeDesktopIcon ]
 		ifFalse: [ #desktopIcon asIcon ]
 ]
 

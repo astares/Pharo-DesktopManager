@@ -8,7 +8,7 @@ Class {
 		'name',
 		'form'
 	],
-	#category : 'DesktopManager-Core-Backgrounds'
+	#category : #'DesktopManager-Core-Backgrounds'
 }
 
 { #category : #accessing }

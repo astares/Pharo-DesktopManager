@@ -4,7 +4,7 @@ A keymap category for the desktop shortcuts
 Class {
 	#name : #DesktopKeymapCategory,
 	#superclass : #KMCategory,
-	#category : 'DesktopManager-Core-Shortcuts'
+	#category : #'DesktopManager-Core-Shortcuts'
 }
 
 { #category : #'class initialization' }
