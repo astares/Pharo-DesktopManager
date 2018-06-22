@@ -4,6 +4,5 @@ menuCommandOn: aBuilder
 	
 	(aBuilder item: #'Desktops')	 
 		help: 'Windows Tools';
-		order: 4.1;
-		icon: Smalltalk ui icons transcriptIcon.
+		order: 4.1.
 	 aBuilder withSeparatorAfter 

@@ -1,5 +1,5 @@
 accessing
 icon
-	^self isActive 
-		ifTrue: [ #activeDesktopIcon asIcon ]
+	^ self isActive
+		ifTrue: [ self iconNamed: #activeDesktopIcon ]
 		ifFalse: [ #desktopIcon asIcon ]
