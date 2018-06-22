@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "TorsteBergmann 9/1/2017 21:47",
+	"super" : "Object",
+	"category" : "DesktopManager-Core-Spotter",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DesktopBackgroundsSpotterModel",
+	"type" : "normal"
+}

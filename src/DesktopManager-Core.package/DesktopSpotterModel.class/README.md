@@ -1,0 +1,1 @@
+A spotter model for the desktops

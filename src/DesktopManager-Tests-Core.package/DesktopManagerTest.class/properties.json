@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "TorstenBergmann 8/24/2015 21:34",
+	"super" : "TestCase",
+	"category" : "DesktopManager-Tests-Core-Base",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"manager"
+	],
+	"name" : "DesktopManagerTest",
+	"type" : "normal"
+}

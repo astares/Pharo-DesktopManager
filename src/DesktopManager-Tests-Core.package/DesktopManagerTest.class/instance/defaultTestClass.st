@@ -1,0 +1,4 @@
+defaults
+defaultTestClass
+
+	^DesktopManager

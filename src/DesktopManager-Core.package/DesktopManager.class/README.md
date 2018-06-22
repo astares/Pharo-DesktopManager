@@ -1,0 +1,1 @@
+A manager to handle multiple worlds/desktops
