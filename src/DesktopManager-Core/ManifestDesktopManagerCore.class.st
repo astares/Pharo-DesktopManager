@@ -4,7 +4,7 @@ I store metadata for this package. These meta data are used by other tools such 
 Class {
 	#name : #ManifestDesktopManagerCore,
 	#superclass : #PackageManifest,
-	#category : 'DesktopManager-Core-Manifest'
+	#category : #'DesktopManager-Core-Manifest'
 }
 
 { #category : #'code-critics' }

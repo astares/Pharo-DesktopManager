@@ -37,6 +37,15 @@ DesktopKeymapCategory >> keymapDesktopLogo [
 ]
 
 { #category : #keymaps }
+DesktopKeymapCategory >> keymapDesktopMenuBar [
+	<shortcut>
+	^ KMKeymap
+			shortcut: $d control ,$m control
+			action: [
+				MenubarMorph showMenubar: MenubarMorph showMenubar not ]
+]
+
+{ #category : #keymaps }
 DesktopKeymapCategory >> keymapManagerDesktop [
 	<shortcut>
 	^ KMKeymap
