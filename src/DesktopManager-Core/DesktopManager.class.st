@@ -70,6 +70,13 @@ DesktopManager class >> desktopMenuCommandOn: aBuilder [
 		keyText: 'd, f';
 		action: [ Display toggleFullscreen ].
 		
+	(aBuilder item: #'Toogle menubar')	 
+		help: 'Toogle world menubar';
+		parent: #'Manage Desktops';
+		order: 3.5;
+		keyText: 'd, m';
+		action: [ MenubarMorph showMenubar: MenubarMorph showMenubar not ].	
+		
 	 aBuilder withSeparatorAfter.	
 		
 	(aBuilder item: #'Delete non-active desktops')
@@ -162,6 +169,7 @@ DesktopManager >> addNewDesktop [
 	
 	self addDesktop: desk.
 	self switchToDesktop: desk.
+	MenubarMorph open
 	
 ]
 
