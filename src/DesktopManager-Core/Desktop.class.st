@@ -47,7 +47,7 @@ Desktop >> gtInspectorMorphIn: composite [
 Desktop >> icon [
 	^ self isActive
 		ifTrue: [ Smalltalk ui icons activeDesktopIcon ]
-		ifFalse: [ #desktopIcon asIcon ]
+		ifFalse: [ Smalltalk ui icons desktopIcon ]
 ]
 
 { #category : #testing }
