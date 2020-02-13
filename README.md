@@ -6,6 +6,16 @@ This is a Pharo tool written by Torsten Bergmann to manage multiple desktops in 
 
 Code was migrated from [http://smalltalkhub.com/#!/~TorstenBergmann/DesktopManager](http://smalltalkhub.com/#!/~TorstenBergmann/DesktopManager)
 
+# Overview
+## Quick Start
+
+```Smalltalk
+Metacello new 
+	repository: 'github://astares/Pharo-DesktopManager/src';
+	baseline: 'DesktopManager';
+	load 	
+```
+
 ## Tutorial
 
 Read the article "Multiple Desktops for Pharo - Speed coding a desktop manager" on Medium:
