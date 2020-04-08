@@ -8,28 +8,19 @@ WorldMorph >> desktops [
 { #category : #'*DesktopManager-Core' }
 WorldMorph >> installForDesktopManager [
 	
-	owner := nil.
-	
-	Sensor
-		flushNonKbdEvents;
-		flushKeyboard;
-		flushEvents;
-		shutDown.
-	self class shutDown.
- 
-	self addHand: HandMorph new.	
-	self borderWidth: 0.
-	self viewBox: Display boundingBox.
-	self borderWidth: 0.	"default"
-	self color: self class defaultWorldColor.
-
-	World := self.
+	owner := nil.	"since we may have been inside another world previously"
 	ActiveWorld := self.
-	ActiveHand := self hands first.	"default"
-	ActiveEvent := nil.
-	worldState handsDo: [ :h | h releaseCachedState ].
-	Sensor startUp.
-	self class startUp.
-	self showWorldTaskbar: true.
-	self displayWorldSafely.
+	World := self.
+	
+	self hands ifEmpty: [self addHand: HandMorph new].
+
+	self worldState worldRenderer: AbstractWorldRenderer mainWorldRenderer.
+	AbstractWorldRenderer mainWorldRenderer world: self.  
+	
+	submorphs do: [ :ss | ss owner ifNil: [ ss privateOwner: self ] ].	
+		
+	worldState handsDo: [ :h | h initForEvents ].
+	self borderWidth: 0.	
+	SystemWindow noteTopWindowIn: self.
+	self color: self class defaultWorldColor.
 ]
