@@ -4,7 +4,7 @@ A spotter model for the desktops
 Class {
 	#name : #DesktopSpotterModel,
 	#superclass : #Object,
-	#category : #'DesktopManager-Core-Spotter'
+	#category : #'DesktopManager-Core-Spotter-Deprecated'
 }
 
 { #category : #'instance creation' }
@@ -31,7 +31,7 @@ DesktopSpotterModel >> spotterDesktopsFor: aStep [
 	<spotterOrder: 10>
 	
 	^ aStep listProcessor 
-		title: ['Desktops'];
+		title: ['Desktops (old)'];
 		candidatesLimit: Float infinity;
 		allCandidates: [ Desktop manager desktops ];
 		itemName: [:item | item name ];

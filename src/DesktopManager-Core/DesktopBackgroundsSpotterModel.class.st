@@ -4,7 +4,7 @@ A spotter model for background pictures
 Class {
 	#name : #DesktopBackgroundsSpotterModel,
 	#superclass : #Object,
-	#category : #'DesktopManager-Core-Spotter'
+	#category : #'DesktopManager-Core-Spotter-Deprecated'
 }
 
 { #category : #'instance creation' }
